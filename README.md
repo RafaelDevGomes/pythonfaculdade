@@ -24,3 +24,8 @@
 ``if(se)`` -> verifica se uma condição é true(verdadeira) se for, ele executa o code.
 ``else(senão)`` -> executa o código se a condição do if for false(falsa)
 ``eliif(senão se)`` -> é apenas utilizado se todas as outras condições anteriores forem false, ele é utilizado para verificar uma nova condição.
+
+# operadores logicos
+and -> e >- se duas condições forem true, ent o resultado é true.
+or -> ou -> se peomenos uma condição for true, ent o resultado é true.
+not -> ele altera o valor booleano da condição.
