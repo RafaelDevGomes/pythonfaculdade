@@ -29,3 +29,8 @@
 and -> e >- se duas condições forem true, ent o resultado é true.
 or -> ou -> se peomenos uma condição for true, ent o resultado é true.
 not -> ele altera o valor booleano da condição.
+
+## boas práticas:
+1. qualquer variavel utilizar o padrão case/snake_case ou recentemente o cammelCase.
+2. se vc observar uma estrutura tipo nome(), 90% de chance de ser uma função.
+3. python n tem constante, porém utilizamos o padrão case UPPERCASE, para simular que aquela variável n pd ser alterada.
