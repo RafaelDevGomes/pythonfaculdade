@@ -9,4 +9,4 @@ elif idade >= 18 and salario >= 5000 and tempo_servico >= 2:
     print(f"emprestimo aprovado automaticamente, sua idade é {idade}, seu salario é {salario} e seu tempo de serviço é {tempo_servico}")
     
 else:
-    print(f"emprestimo negado, sua idade é {idade}, seu salario é {salario} e seu tempo de serviço é {tempo_servico}, bobao")
+    print(f"emprestimo negado, sua idade é {idade}, seu salario é {salario} e seu tempo de serviço é {tempo_servico}, bobao") 
