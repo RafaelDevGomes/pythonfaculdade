@@ -1,0 +1,27 @@
+📘 Descrição do Desafio
+
+Desenvolva um programa que simule o controle de notas de um aluno. O programa deve permitir cadastrar notas, calcular a média e mostrar o desempenho do aluno. O sistema deve continuar em execução até que o usuário escolha sair.
+
+📌 Requisitos Funcionais:
+Inicie o programa com:
+Uma lista vazia chamada notas para armazenar as notas do aluno.
+Crie um laço de repetição while que mantenha o programa ativo e exiba o seguinte menu:
+[1] Adicionar Nota
+[2] Ver Notas
+[3] Calcular Média
+[4] Ver Situação
+[5] Sair
+Adicionar Nota:
+Se o usuário escolher [1], o programa deve pedir uma nota (de 0 a 10) e adicioná-la à lista notas.
+Ver Notas:
+Se o usuário escolher [2], exiba todas as notas armazenadas.
+Calcular Média:
+Se o usuário escolher [3], calcule a média das notas armazenadas e exiba o resultado.
+Se não houver notas, exiba uma mensagem informando isso.
+Ver Situação:
+Se o usuário escolher [4], calcule a média e informe:
+Média ≥ 7 → Aprovado
+Média entre 5 e 6.9 → Recuperação
+Média < 5 → Reprovado
+Sair:
+Se o usuário escolher [5], o programa deve encerrar com uma mensagem de despedida.

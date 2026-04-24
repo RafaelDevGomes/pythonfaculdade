@@ -1,5 +1,5 @@
 saldo = 1000.00
-historico = ["Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado","Deposito de 500 realizado"] # lista vazia
+historico = [""] # lista vazia
 
 print(f'🏧 --- Bem vindo ao caixa eletrônico ---')
 
