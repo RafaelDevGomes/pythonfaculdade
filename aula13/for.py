@@ -6,7 +6,7 @@
 
 i = 5 # variavel no escopo global
 
-for numero in range (1,11):
+for numero in range (1,21):
     total = i * numero  # variavel no escopo local
     print(f'5x {numero} = {total}')
     

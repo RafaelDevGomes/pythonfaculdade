@@ -19,7 +19,7 @@ while True: # significa q pelomenos uma unica vez, essa variavel vai rodar
         if valor_deposito > 0:
             saldo = saldo + valor_deposito
             registro = f'deposito: +R$ {valor_deposito: .2f}'
-            historico.append() # Append() adiciona algo a lista
+            historico.append(registro) # Append() adiciona algo a lista
             print('🆗 Depósito realizado com sucesso.')
 
         else:
