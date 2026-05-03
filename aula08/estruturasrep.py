@@ -5,12 +5,9 @@
 # else:
 #     print("vc eh menorzin")    
 
-idade = 73
+idade = int(input('Digite sua idade' ))
+
 if idade >= 18:
-    print("vc e maior de idade")
-elif idade >= 0 and idade < 18:
-    print("vc e menor de idade")    
- elif idade > 70:
-    print("vc e idoso")   
+    print("vc e maior de idade")   
 else:
     print("vc e menor")  

@@ -20,7 +20,7 @@ while True:
             print(f'{add_notas} ✔️ 😊sua nota foi adicionada com sucesso!')
         else:
             print('❌🍕nota negada, insira um numero de 0 a 10.')  
-            break
+            break   
         
     elif opcao == '2':
         input(f'💸💸💸💸{add_notas}')
@@ -34,3 +34,6 @@ while True:
             print('❌❌você está frito!')
         else:
             print('parabéns! 🍕🍕')    
+    elif opcao == '5':
+        print('👋👋👋obrigado por usar o sistema da escola!')
+        break
