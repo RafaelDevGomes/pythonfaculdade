@@ -16,6 +16,10 @@
 ## métodos em python
 
 1. print() exibe informações no terminal
+2. input() capturar uma informção no terminal
+3. lower() converte toda a string em minúscula
+4. upper() converte toda a string em maiuscula
+5. isdigit() verifica se o valor tem numero
 
 ## format em python
 
