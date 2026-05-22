@@ -63,3 +63,11 @@ while -> é utilizado quando não sabeos quantas vezes o programa vai repetir. e
 Sintaxe:
 while condição:
       comandos
+
+## boas práticas
+uppercase para simular que aquela variavel será alterada
+
+## funções em python
+`def` = define que uma função será declarada
+`propiedade` = variavel em memoria que ira receber um argumento
+`argumento` = [valor] que irá preencher o espaço da propiedade
