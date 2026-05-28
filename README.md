@@ -16,6 +16,10 @@
 ## métodos em python
 
 1. print() exibe informações no terminal
+2. input() capturar uma informção no terminal
+3. lower() converte toda a string em minúscula
+4. upper() converte toda a string em maiuscula
+5. isdigit() verifica se o valor tem numero
 
 ## format em python
 
@@ -59,3 +63,11 @@ while -> é utilizado quando não sabeos quantas vezes o programa vai repetir. e
 Sintaxe:
 while condição:
       comandos
+
+## boas práticas
+uppercase para simular que aquela variavel será alterada
+
+## funções em python
+`def` = define que uma função será declarada
+`propiedade` = variavel em memoria que ira receber um argumento
+`argumento` = [valor] que irá preencher o espaço da propiedade
