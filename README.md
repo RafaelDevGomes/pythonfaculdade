@@ -71,3 +71,18 @@ uppercase para simular que aquela variavel será alterada
 `def` = define que uma função será declarada
 `propiedade` = variavel em memoria que ira receber um argumento
 `argumento` = [valor] que irá preencher o espaço da propiedade
+
+## Estruturas em python
+
+list ou lista -> Armazena valores avulsos e podem ser heterogênea ou homogênea. Ou seja, pode guardar valores de um mesmo tipo ou de diferentes tipos.
+Ex. list = [] // Lista vazia
+list = ["William", 25, 1,82]
+
+`dict ou dicionário` = armazena conjuntos de valores (chave:valor). as chaves e valores podem ser heterogeneos ou homogeneas
+
+1. para obter o valor de um conjunto em dict, vc acessa pela chave.
+Ex: dados_usuario = {} // dicionario vazio
+dados_usuario = {"nome": "Rafael", "cpf": 123.456.789-01, "idade": 19}
+dados_usuario["nome"] = devolve o valor que é Rafael
+dados_usuario["cpf"] = devolve o valor que é 123.456.789-01
+dados_usuario["idade"] = devolve o valor que é 19
