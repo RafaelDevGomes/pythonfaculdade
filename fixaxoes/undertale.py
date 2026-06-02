@@ -16,47 +16,80 @@ print('Olá humano! Bem vindo ao mundo subterráneo!')
 
 
 vidas_jogador = 20
-opcao = ""
-girada = 15
-soco = 20
-facada = 50
-abraço_gentil = 20
 
-while opcao != 4:
+while True:
     print("""Humano, decida qual rota você desejará seguir:
     1 para rota pacifista
     2 para rota genocida
     3 para rota neutra   
     4 para sair (fechar o jogo)             
     """)
+    opcao = input("Escolha seu destino, humano: ")
     
-if opcao == "4":
-    print("ADEUS HUMANO!")
-    
+    if opcao == "4":
+     print("ADEUS HUMANO!")
+     break
 
-elif opcao == "1":
-    print("Você é uma alma bondosa, porém ainda enfrentará desafios em seu caminho..")
-    vida_boss_pacifista = 50 
+    elif opcao == "1":
+         print("Você é uma alma bondosa, porém ainda enfrentará desafios em seu caminho..")
+         vida_boss_pacifista = 50 
 
-    print(f'Um boss apareceu! ele tem {vida_boss_pacifista}')
-    
-   
-    if girada: 
-     print(f'Você deu {girada} de dano no Boss!')
+         print(f'Um boss apareceu! ele tem {vida_boss_pacifista} de vida!')
+        
+         print("escolha seu ataque: girada/soco/facada/abraço gentil")
+         acao = int(input("Ação: "))
+         if acao == 1:
+           vida_boss_pacifista -= 15
+           print(f"Você tirou 15 de dano!")
 
-    elif soco:
-       print(f'Você deu {girada} de dano no Boss!')
+         elif acao == 2:
+           vida_boss_pacifista -= 20
+           print("Essa doeu! você tirou 20 de vida do boss!")
 
-    elif facada:
-       print(f'Você deu {facada} de dano no Boss.. ele não parece estar bem.. você ganhou 10 de gold e ganhou a batalha.')   
-    
-    elif vida_boss_pacifista < 20:
-       print(f'Você abraça o boss.. ele fica confuso mas gosta, o boss vai embora, você venceu!')
+         elif acao == 3:
+           vida_boss_pacifista -= 50
+           print("Você está indo para um caminho que não tem como ter volta.. o boss foi derrotado, mas a qual custo?")
+
+         elif acao == 4:
+           print("Você abraçou o boss.. ele acha estranho mas aprecia e te abraça de volta..")
+           print("Ele some na escuridão das ruinas com um sorriso, você fez um amigo!")   
+
+         else:
+           print("Aconteceu algo? vc digitou algo inesperado.. tente novamente")
+
+    elif opcao == "2":
+        print("Você é uma má pessoa, você não é nem um monstro nem um humano.. você é uma aberração!")  
+        vidas_jogador += 80
+        vida_boss_genocida = 200
+
+        print(f'Uma presa apareceu.. ele tem {vida_boss_genocida} de vida!')
+        
+        print("Escolha um ataque para usar contra o boss: facada/soco forte/porretada/encontrão")
+        acao = int(input("Ação: "))
+        if acao == 1:
+          vida_boss_genocida -= 50
+          print(f"ISSO! atinga-o mais algumas vezes! ele ainda tem {vida_boss_genocida}hp!")
+
+        elif acao == 2:
+          vida_boss_genocida -= 45
+          print(f"BEMMM NO QUEIXO! temos que derrubar esse grandalhão! ainda tem {vida_boss_genocida}hp!")
+        
+        elif acao == 3:
+          vida_boss_genocida -= 60
+          print(f"HAHAHAHAHA bem na cabeça! continue atingindo ele até ele cair! ainda sobra {vida_boss_genocida}hp!")
+
+        elif acao == 4:
+           vida_boss_genocida -= 45
+           print(f"Não foi seu melhor ataque.. mas da pro gasto! ainda sobram {vida_boss_genocida}hp!")
+
+        else:
+           print("É.. tudo bem com vc? vc digitou algo totalmente inesperado e bizarro! tente novamente")
+     
+    elif opcao == "3":
+      print("Boa escolha humano.. porém nada nessa rota acontece feijoada.")
+      break
+
+
+    else:
+     print("Bro, tu digitou algo errado, tenta dnv ai")
        
-
-elif opcao == "2":
- vidas_jogador += 80
- print("Você é uma má pessoa, você não é nem um monstro nem um humano.. você é uma aberração!")  
-
-
-
