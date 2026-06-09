@@ -13,7 +13,7 @@
 
 # retorno de valores, "unpacking" - devolve uma tupla com os returns
 
-def resumo_pedido(itens, desconto=0):
+def resumo_pedido (itens, desconto=0):
     subtotal = sum(itens)
     valor_desconto = subtotal * (desconto / 100)
     total = subtotal - valor_desconto
