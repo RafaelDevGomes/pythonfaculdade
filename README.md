@@ -86,3 +86,22 @@ dados_usuario = {"nome": "Rafael", "cpf": 123.456.789-01, "idade": 19}
 dados_usuario["nome"] = devolve o valor que é Rafael
 dados_usuario["cpf"] = devolve o valor que é 123.456.789-01
 dados_usuario["idade"] = devolve o valor que é 19
+
+## poo
+1. em python, todo molde é declarado através de uma classe => [class].
+2. qualquer caracteristica dentro de uma classe, é chamada de atributos e são declaradas com variaveis;
+3. qualquer ação é chamada dentro de uma classe é método e são declaradas com variaveis.
+4. as açõews dentro de uma classe são chamadas de métodos e são declarados como funções
+# precisamos criar um molde de uma pessoa. => class
+# caracteristicas -> atributos -> variáveis
+# ações -> métodos -> funções
+# metodo é uma função dentro de uma classe
+
+5. [self] -> significa ele mesmo, o atributo da classe atual.
+6. [constructor] -> é a estrutura de como a classe será "copiada"
+
+## cases em python
+1. snake_case -> nome_aluno -> nome de variaveis, metodos(função) e arquivos (usar letras minusculas e usar o underline)
+2. cammelcase -> nomeAluno -> nome de variaveis, metodos(função). (mais atual)
+3. PascalCase -> NomeAluno -> Classes.
+4. kebab-case -> nome-aluno -> não utilizamos no python
