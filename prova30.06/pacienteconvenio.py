@@ -13,3 +13,22 @@ class Pacienteconvenio(Paciente):
         super().__init__(nome, data_nasc, cpf, telefone, tipo_sang, numero_prontu)
         self.nome_convenio = nome_convenio
         self.numero_carteirinha = numero_carteirinha
+    
+    def registrar_autorizacao(self, procedimento, valor_glosa):
+       self.procedimento = procedimento
+       self.valor_glosa = valor_glosa
+       if valor_glosa == False:
+            print("0")
+       else:
+            return valor_glosa
+
+
+    def exibir_informacoes(self):
+      return f'''
+      Nome: {self.nome}
+      Data de Nascimento: {self.data_nasc}
+      CPF: {self.cpf}
+      Telefone: {self.telefone}
+      Tipo Sanguíneo: {self.tipo_sang}
+      Numero prontuário: {self.numero_prontu}
+      '''    

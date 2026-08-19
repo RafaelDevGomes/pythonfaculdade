@@ -17,10 +17,21 @@ class Pacienteparticular(Paciente):
 
     #sobre escrita de metodo = polimorfismo
 
-    def calcular_atendimento(self):
-        pagar_atendimento = pagar_atendimento / self.desconto_fidelidade
-        return f'''
-        Forma de pagamento: {self.forma_pagamento}
+    def calcular_valor_final(self, valor_consulta, taxa_urgencia):
+        self.valor_consulta = valor_consulta
+        self.taxa_urgencia = taxa_urgencia
+        valor_consulta = valor_consulta * self.desconto_fidelidade
+        return valor_consulta
         
-'''
+        
+    def exibir_informacoes(self):
+      return f'''
+      Nome: {self.nome}
+      Data de Nascimento: {self.data_nasc}
+      CPF: {self.cpf}
+      Telefone: {self.telefone}
+      Tipo Sanguíneo: {self.tipo_sang}
+      Numero prontuário: {self.numero_prontu}
+      '''
+
         

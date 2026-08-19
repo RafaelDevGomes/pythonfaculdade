@@ -44,7 +44,7 @@ class Paciente:
       Telefone: {self.telefone}
       Tipo Sanguíneo: {self.tipo_sang}
       Numero prontuário: {self.numero_prontu}
-'''
+      '''
    def registrar_atendimento(self, tipo, custo):
       self.tipo = tipo
       self.custo = custo
