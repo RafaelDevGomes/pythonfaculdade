@@ -1,0 +1,8 @@
+https://primeiroacesso.rj.senac.br/
+
+12/08/2026
+# CRUD - Backend <=> BD
+# C -> create - é quando eu crio alguma coisa no BD.
+# R -> read - é quando eu consumo dados do BD.
+# U -> update - é quando algo no BD é alterado.
+# D -> delete - é quando você EXCLUI algo no BD.
