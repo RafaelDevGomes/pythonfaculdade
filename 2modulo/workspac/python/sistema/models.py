@@ -7,7 +7,18 @@ class Paciente(models.Model):
     nome = models.CharField(max_length=30) # nome do paciente limitado até 25 carácteres. 
     sobrenome = models.CharField(max_length=100)
     email = models.EmailField() # email de contato do paciente.
-    telefone = models.CharField( max_length=20)
+    telefone = models.CharField(max_length=20)
     criacao_data = models.DateTimeField(default=timezone.now) 
     mensagem = models.TextField(blank=True) # campo opcional, pode ficar em branco ou totalmente cheio, livre para mensagem.
     ativo = models.BooleanField(default=True) # campo de exclusão lógica
+
+class Medico(models.Model):
+    nome = models.CharField(max_length=30)
+    sobrenome = models.CharField(max_length=50)
+    email = models.EmailField()
+    telefone = models.CharField(max_length=20)
+    criacao_data = models.DateTimeField(default=timezone.now)
+    especialidade = models.CharField(max_length=20)
+    mensagem = models.TextField(blank=True)
+    ativo = models.BooleanField(default=True)
+    crm = models.CharField(max_length=6)

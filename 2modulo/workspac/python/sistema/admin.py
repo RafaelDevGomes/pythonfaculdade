@@ -1,5 +1,11 @@
 from django.contrib import admin
-from vollmed import Paciente
+from sistema import models
 
-# Register your models here.
+@admin.register(models.Paciente) # registro o paciente no portal do python
+class PacienteAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome', 'email', 'telefone', 'ativo',)
+    
+@admin.register(models.Medico)
+class MedicoAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome', 'email', 'telefone', 'especialidade', 'crm', 'ativo')
 
