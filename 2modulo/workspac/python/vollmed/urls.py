@@ -1,22 +1,48 @@
-"""
-URL configuration for vollmed project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
+from django.http import HttpResponse
 from django.urls import path
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', home_view), # deixar vazio significa que será reconhecido como a página inicial!
 ]
+
+
+
+
+
+
+
+
+
+
+
+# MVT (MVC)
+
+# www.vollmed.online
+# www.vollmed.online/Login
+# www.vollmed.online/
+
+# medico
+# www.vollmed.online/medico/id/ -> id do médico (1,2,3..)
+# www.vollmed.online/medico/id/alterar -> alterar cadastro do médico
+# www.vollmed.online/medico/id/consultas
+
+# paciente
+# www.vollmed.online/paciente/id -> perfil do paciente
+# www.vollmed.online/paciente/id/alterar -> alterar cadastro do paciente
+
+# www.vollmed.online/paciente/id/consultas/cadastrar/
+# www.vollmed.online/paciente/id/consultas/id/ -> ver,alterar,deletar
+
+# secretario 
+# www.vollmed.online/secretario/id -> perfil do secretario
+# www.vollmed.online/secretario/id/alterar -> alterar cadastro do secretario
+
+# www.vollmed.online/secretario/id/consultas/cadastrar/
+# www.vollmed.online/secretario/id/consultas/id/ -> ver,alterar,deletar
+
+
+# consulta
+# www.vollmed.online/consulta/
